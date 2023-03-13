@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <title> My To Do</title>
+    <head>
+      <link rel="stylesheet" href="style.css" />
+        <body>
+ <nav class="navbar bg-dark" data-bs-theme="dark">         
+<div class="topnav">
+    <a class="active" href="home.html">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <div class="container-fluid">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search To-do.."aria-label="Search">
+        <button class="button button4">Search</button>
+      </form>
+    </div>    
+  </div>
+</nav>
+<h2> My to do list </h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th> Sno </th>
+    <th> Title </th>
+    <th> Description </th>
+    <th> created on </th>
+    </tr>
+    
+  </thead>
+  <tbody>
+    <tr>
+      <td> {{loop.index}}</td>
+      <td> first todo </td>
+      <td> This is a dummy entry</td>
+      <td> {{date}} </td>
+    </tr>
+    <tr>
+      <td> {{loop.index}}</td>
+      <td> Second todo </td>
+      <td> This is my second a dummy entry</td>
+      <td> {{date}} </td>
+    </tr>
+    
+  </tbody>
+</table>  
+        </body>
+    </head>
+   
+</html>
